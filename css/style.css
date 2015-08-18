@@ -1,19 +1,30 @@
 body {
   background: pink;
 }
+
+.no-mg {
+  margin: 0;
+}
+
 .container-fluid>.container {
-	position: relative;
-	padding: 0;
+  position: relative;
+  padding: 0;
+}
+.navbar {
+  border-radius: 0;
 }
 .navbar-nav {
   margin: 7.5px 0;
 }
+
 .navbar-collapse {
-	padding: 0;
+  padding: 0;
 }
+
 .logo {
-	float: left;
+  float: left;
 }
+
 .info {
   position: absolute;
   top: 0;
@@ -29,25 +40,29 @@ body {
 }
 
 .items-header {
-	position: relative;
+  position: relative;
 }
 
 
 /*tabs*/
+
 .nav-tabs {
-	border-bottom: none;
+  border-bottom: none;
 }
+
 .nav-tabs>li {
-	float: none;
-	text-align: center;
+  float: none;
+  text-align: center;
 }
+
 .nav-tabs>li>a {
-	padding: 0;
-	margin: 0;
-	line-height: 30px;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
   border: none;
   border-radius: 0;
 }
+
 .nav-tabs>li.active a,
 .nav-tabs>li.active a:focus,
 .nav-tabs>li.active a:hover {
@@ -55,29 +70,22 @@ body {
   margin: 0;
   padding: 0;
 }
+
 a small {
   display: block;
   line-height: 10px;
   padding-bottom: 10px;
 }
-	.tab-pane .row {
-		margin: 0;
-	}
-.tab-pane .col-sm-4 {
-	max-width: 300px;
-	margin: 10px auto;	
-	padding: 0;
-}
+
+
 /* end tabs*/
 
 .show-all {
-	position: absolute;
-	top: 0;
-	right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.items-body {
-	margin: 0;
-}
+
 .item {
   position: relative;
   max-width: 300px;
@@ -92,77 +100,54 @@ a small {
   padding: 0;
 }
 
-
 @media only screen and (min-width: 768px) {
-	.navbar-nav {
-		margin: 0;
-	}
-	.user-area {
-		float: right;
-	}
+  .navbar-nav {
+    margin: 0;
+  }
+  .user-area {
+    float: right;
+  }
   .info {
     float: right;
     position: relative;
   }
-
-	.nav-tabs>li {
-		float: left;
-	  width: 20%;
-	}
-
-	.tab-pane .col-sm-4 {
-		width: 32%;
-		max-width: none;
-	}
-	.tab-pane .col-sm-4 ~ .col-sm-4 {
-  	margin-left: 2%;
-	}
-
-	.tab-pane img {
-
-	}
-
-
-
-
-
-	.item {
-    width: 32%;	
-	  max-width: inherit;
-  	margin: 0;
-	}
-	.item ~ .item {
-		margin-left: 2%;
-  	background: red;
+  .nav-tabs>li {
+    float: left;
+    width: 20%;
+  }
+  .item {
+    width: 32%;
+    max-width: inherit;
+    margin: 0;
+  }
+  .item ~ .item {
+    margin-left: 2%;
+    background: red;
   }
   .footer-links {
-  	position: absolute;
-  	top: 0;
-  	right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .footer-links li {
-  display: inline-block;
-}
-.footer-links li ~ li:before {
-	content: "\00a0/\00a0\00a0";
-}
+    display: inline-block;
+  }
+  .footer-links li ~ li:before {
+    content: "\00a0/\00a0\00a0";
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     width: 940px;
   }
-  .tab-pane .col-sm-4 ~ .col-sm-4 {
-	  margin-left: 2%;
-	}
   .item {
-    width: 31.9%;	
-	  max-width: inherit;
-  	margin: 0;
-	}
+    width: 31.9%;
+    max-width: inherit;
+    margin: 0;
+  }
   .item ~ .item {
-		margin-left: 2.1%;
-		background: green;
+    margin-left: 2.1%;
+    background: green;
   }
 }
-

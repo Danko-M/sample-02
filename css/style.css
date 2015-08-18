@@ -58,6 +58,9 @@ body {
 	.navbar-nav {
 		margin: 0;
 	}
+	.user-area {
+		float: right;
+	}
   .info {
     float: right;
     position: relative;

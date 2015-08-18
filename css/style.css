@@ -44,7 +44,7 @@ body {
 .nav-tabs>li>a {
 	padding: 0;
 	margin: 0;
-	line-height: 40px;
+	line-height: 30px;
   border: none;
   border-radius: 0;
 }
@@ -54,6 +54,19 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+}
+a small {
+  display: block;
+  line-height: 10px;
+  padding-bottom: 10px;
+}
+	.tab-pane .row {
+		margin: 0;
+	}
+.tab-pane .col-sm-4 {
+	max-width: 300px;
+	margin: 10px auto;	
+	padding: 0;
 }
 /* end tabs*/
 
@@ -96,14 +109,31 @@ body {
 		float: left;
 	  width: 20%;
 	}
+
+	.tab-pane .col-sm-4 {
+		width: 32%;
+		max-width: none;
+	}
+	.tab-pane .col-sm-4 ~ .col-sm-4 {
+  	margin-left: 2%;
+	}
+
+	.tab-pane img {
+
+	}
+
+
+
+
+
 	.item {
-    width: 31.9%;	
+    width: 32%;	
 	  max-width: inherit;
   	margin: 0;
 	}
-  .item ~ .item {
-		margin-left: 2.1%;
-		background: green;
+	.item ~ .item {
+		margin-left: 2%;
+  	background: red;
   }
   .footer-links {
   	position: absolute;
@@ -121,6 +151,18 @@ body {
 @media (min-width: 992px) {
   .container {
     width: 940px;
+  }
+  .tab-pane .col-sm-4 ~ .col-sm-4 {
+	  margin-left: 2%;
+	}
+  .item {
+    width: 31.9%;	
+	  max-width: inherit;
+  	margin: 0;
+	}
+  .item ~ .item {
+		margin-left: 2.1%;
+		background: green;
   }
 }
 

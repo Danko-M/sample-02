@@ -226,8 +226,10 @@ a small {
   margin: 0;
   padding: 0;
 }
-
 @media only screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
   .navbar-nav {
     margin: 0;
   }
@@ -258,7 +260,7 @@ a small {
     margin-left: 2%;
   }
   .footer-links {
-    position: absolute;
+    position: absolute; 
     top: 0;
     right: 0;
   }

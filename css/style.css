@@ -20,22 +20,39 @@ a:hover {
   color: #fff;
   background: #242424;
 }
-input {
+.user-area input {
+  display: block;
   color: #000;
 }
+.badge {
+  margin-left: 5px;
+  background-color: #57C5A0;
+}
+.info .fa {
+  width: 20px;
+}
 .navbar {
+  border: none;
   border-radius: 0;
+}
+.navbar-default {
+  background-color: #fff;
 }
 .navbar-nav {
   margin: 7.5px 0;
 }
-
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  background: #fff;
+}
 .navbar-collapse {
   padding: 0;
 }
 
 .logo {
   float: left;
+  width: 100%;
 }
 
 .info {
@@ -47,9 +64,16 @@ input {
 }
 
 .info li {
-  display: inline-block;
+  float: left;
   padding: 0 10px;
   line-height: 50px;
+  
+  
+}
+
+.info li + li {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 .teaser {
   position: relative;
@@ -94,8 +118,13 @@ input {
 }
 .items-header {
   position: relative;
+  margin-top: 10px;
 }
-
+.items-header > div {
+  width: 150px;
+  font-size: 14px;
+  /*line-height: 90px;*/
+}
 
 /*tabs*/
 .nav-tabs-bg {
@@ -138,6 +167,9 @@ a small {
 .tab-content-bg {
   background: #242424;
 }
+.tab-content {
+  margin: 20px 0;
+}
 .items {
   background: #ebe7df;
 }
@@ -165,8 +197,9 @@ a small {
 
 .show-all {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
+  margin-top: -17px;
 }
 
 .item {
@@ -175,12 +208,13 @@ a small {
   max-width: 300px;
   padding: 0;
   margin: 20px auto;
-  background: #fff;
+  background: transparent;
   overflow: hidden;
 }
 .item .col-sm-4 {
   width: auto;
   padding: 0;  
+  background: #fff;
 }
 .description {
   padding-left: 105px;
@@ -226,12 +260,35 @@ a small {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 480px) {
+  .items-header > div {
+     width: auto; 
+    font-size: 25px;
+  } 
+}
 @media only screen and (min-width: 768px) {
   .container {
     width: 720px;
   }
+  .logo {
+    width: auto;
+  }
+  .user-area input {
+    display: inline-block;
+  }
+  .info li + li {
+    border: none;
+  }
+  .info li:first-child {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+  }
   .navbar-nav {
     margin: 0;
+  }
+  .navbar-nav>li>a {
+    font-weight: 700;
+    border-right: 1px solid lightgray;
   }
   .user-area {
     float: right;
@@ -249,6 +306,9 @@ a small {
   }
   .teaser-content {
     margin-left: 50%;
+  }
+  .items-header {
+    margin-bottom: 10px;
   }
   .item {
     float: left;

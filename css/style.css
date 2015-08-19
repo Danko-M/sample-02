@@ -3,12 +3,13 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-a, 
+a,
 a:focus,
 a:hover {
   color: inherit;
   text-decoration: none;
-} 
+}
+
 .no-mg {
   margin: 0;
 }
@@ -17,10 +18,12 @@ a:hover {
   position: relative;
   padding: 0;
 }
+
 .user-area-bg {
   color: #fff;
   background: #242424;
 }
+
 .logo {
   float: left;
   width: 100%;
@@ -28,62 +31,77 @@ a:hover {
   color: #57C5A0;
   line-height: 50px;
 }
+
 .logo:hover {
   color: #6AF3C5;
 }
-.user-area-bg  {
+
+.user-area-bg {
   height: 85px;
   -webkit-transition: height 0.3s;
   -o-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s;
 }
+
 .new-height {
-  height: 105px;
+  height: 115px;
 }
+
 .user-area span {
   display: block;
 }
+
 .user-area input {
   display: block;
   display: none;
   width: auto;
-  height: 20px;
-  padding: 0 10px;
+  /*height: 20px;*/
+  padding: 5px 10px;
   color: #fff;
   background-color: #636363;
   border: none;
 }
+
+.user-area a:hover {
+  text-decoration: underline;
+}
+
 .fa.fa-search {
   background: #242424;
 }
+
 .badge {
   margin-left: 5px;
   background-color: #57C5A0;
 }
+
 .info .fa {
   width: 20px;
 }
+
 .navbar {
   border: none;
   border-radius: 0;
 }
+
 .navbar-default {
   background-color: #fff;
 }
+
 .navbar-nav {
   margin: 7.5px 0;
 }
+
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background: #fff;
 }
+
 .navbar-collapse {
   padding: 0;
 }
-
-
 
 .info {
   position: absolute;
@@ -97,18 +115,18 @@ a:hover {
   float: left;
   padding: 0 10px;
   line-height: 50px;
-  
-  
 }
 
 .info li + li {
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
 }
+
 .teaser {
   position: relative;
   min-height: 460px;
 }
+
 .teaser:after {
   content: "\00a0";
   position: absolute;
@@ -120,9 +138,11 @@ a:hover {
   left: 0;
   z-index: -1;
 }
+
 .teaser-content {
   padding-top: 100px;
 }
+
 .msg {
   position: relative;
   width: 58px;
@@ -131,9 +151,11 @@ a:hover {
   text-align: center;
   color: #fff;
 }
+
 .price {
   background: #57c5a0;
 }
+
 .fa {
   display: inline-block;
   width: 30px;
@@ -143,23 +165,29 @@ a:hover {
   background: #fff;
   cursor: pointer;
 }
+
 .fa:hover {
   color: #57c5a0;
 }
+
 .items-header {
   position: relative;
   margin-top: 10px;
 }
+
 .items-header > div {
   width: 150px;
   font-size: 14px;
   /*line-height: 90px;*/
 }
 
+
 /*tabs*/
+
 .nav-tabs-bg {
   background: #2e2e2e;
 }
+
 .nav-tabs {
   color: #fff;
   border-bottom: none;
@@ -185,24 +213,30 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+
 .nav-tabs>li a:hover {
   background: #fff;
   color: #000;
 }
+
 a small {
   display: block;
   line-height: 10px;
   padding-bottom: 10px;
 }
+
 .tab-content-bg {
   background: #242424;
 }
+
 .tab-content {
   margin: 20px 0;
 }
+
 .items {
   background: #ebe7df;
 }
+
 .add {
   position: absolute;
   top: 50%;
@@ -211,18 +245,21 @@ a small {
   line-height: 60px;
   margin-top: -30px;
   margin-left: -90px;
-  background: rgb(36,36,36);
-  background: rgba(36,36,36,.9);
+  background: rgb(36, 36, 36);
+  background: rgba(36, 36, 36, .9);
   color: #fff;
   text-align: center;
-  -webkit-transition: top 0.2s; 
-  -moz-transition: top 0.2s; 
-  -o-transition: top 0.2s; 
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
   transition: top 0.2s;
 }
+
 .item:hover .add {
   top: -25%;
 }
+
+
 /* end tabs*/
 
 .show-all {
@@ -241,66 +278,123 @@ a small {
   background: transparent;
   overflow: hidden;
 }
+
 .item .col-sm-4 {
   width: auto;
-  padding: 0;  
+  padding: 0;
   background: #fff;
 }
+
 .description {
   padding-left: 105px;
   line-height: 50px;
   font-size: 20px;
   border-top: 1px solid lightgray;
 }
+
 .item .msg {
   position: absolute;
 }
+
 .item .price {
   bottom: 0;
   left: 10px;
 }
+
 .sale,
 .stock-out {
   top: 0;
   right: 10px;
 }
+
 .sale {
   background: #000;
 }
+
 .stock-out {
   padding: 9px 0;
   line-height: 20px;
   background: #f27e4b;
 }
+
 .item .action {
   position: absolute;
   bottom: -50px;
   left: 90px;
   background: #fff;
-  -webkit-transition: bottom 0.2s; 
-  -moz-transition: bottom 0.2s; 
-  -o-transition: bottom 0.2s; 
+  -webkit-transition: bottom 0.2s;
+  -moz-transition: bottom 0.2s;
+  -o-transition: bottom 0.2s;
   transition: bottom 0.2s;
 }
+
 .item:hover .action {
   bottom: 10px;
 }
+
+.addons {
+  margin: 50px auto 20px;
+  border-top: 1px solid lightgray;
+  padding-top: 20px !important;
+  overflow: hidden;
+}
+
+.addons .row {
+  margin: 0;
+}
+
+.addons .col-sm-3,
+.addons .col-sm-6 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #DFDBD4;
+  padding-bottom: 1000em;
+  margin-bottom: -1000em;
+}
+
+.addons-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.date {
+  float: left;
+  width: 60px;
+  margin-right: 10px;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #57c5a0;
+}
+
+.no-mb {
+  margin-bottom: 0;
+}
+
+.no-mb + p {
+  overflow: auto;
+}
+
 .footer-links {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 @media only screen and (min-width: 480px) {
   .items-header > div {
-     width: auto; 
+    width: auto;
     font-size: 25px;
-  } 
+  }
 }
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 720px;
   }
-  .user-area-bg  {
+  .user-area-bg {
     height: auto;
   }
   .logo {
@@ -335,7 +429,7 @@ a small {
     width: 20%;
   }
   .teaser {
-    background:  url(../img/teaser-image.jpg)  50% 50% no-repeat;
+    background: url(../img/teaser-image.jpg) 50% 50% no-repeat;
   }
   .teaser-content {
     margin-left: 50%;
@@ -352,8 +446,18 @@ a small {
   .item ~ .item {
     margin-left: 2%;
   }
+  .addons .col-sm-3 {
+    width: 23%;
+  }
+  .addons .col-sm-3 + .col-sm-3 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .addons .col-sm-6 {
+    width: 50%;
+  }
   .footer-links {
-    position: absolute; 
+    position: absolute;
     top: 0;
     right: 0;
   }
@@ -394,6 +498,7 @@ a small {
     line-height: 20px;
   }
 }
+
 @media (min-width: 1200px) {
   .item .action {
     left: 100px;

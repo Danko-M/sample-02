@@ -1,7 +1,6 @@
 body {
   background: pink;
 }
-
 .no-mg {
   margin: 0;
 }
@@ -88,12 +87,16 @@ a small {
 
 .item {
   position: relative;
+  display: block;
   max-width: 300px;
   padding: 0;
   margin: 20px auto;
   background: #fff;
 }
-
+.item .col-sm-4 {
+  width: auto;
+  padding: 0;  
+}
 .footer-links {
   list-style-type: none;
   margin: 0;
@@ -116,6 +119,7 @@ a small {
     width: 20%;
   }
   .item {
+    float: left;
     width: 32%;
     max-width: inherit;
     margin: 0;

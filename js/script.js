@@ -6,7 +6,10 @@ $(function(){
 		$('.user-area input').animate({width:'toggle'},100).focus();
 	});
 
-	$('a').not('.flickr_badge_wrapper a').on('click', function(e){
+	$('a')	
+	.not('.flickr_badge_wrapper a')
+	.not('.copy > div a')
+	.on('click', function(e){
 		e.preventDefault();
 	});
 });

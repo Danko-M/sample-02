@@ -344,21 +344,19 @@ a small {
 .addons {
   margin: 50px auto 20px;
   border-top: 1px solid lightgray;
-  padding-top: 20px !important;
+  padding-top: 30px !important;
   overflow: hidden;
 }
 
-.addons .row {
+/*.addons .row {
   margin: 0;
-}
+}*/
 
 .addons .col-sm-3,
 .addons .col-sm-6 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #DFDBD4;
-  padding-bottom: 1000em;
+  padding: 20px 30px 1000em 30px;
   margin-bottom: -1000em;
+  background-color: #DFDBD4;
 }
 
 .addons-title {
@@ -388,10 +386,9 @@ a small {
 
 
 
-.narrow-row {
-  padding-top: 50px;
-}
+
 .widget {
+  padding-top: 30px;
   padding-bottom: 30px;
   color: #a4a4a4;
 }
@@ -431,11 +428,16 @@ a small {
 }
 
 
+
+
+.contact {
+  padding: 30px 0;
+}
 .social {
   list-style: none;
   padding-left: 0;
   margin-top: 40px;
-  margin-bottom: 40px;
+
 }
 .social li {
   display: inline-block;
@@ -540,6 +542,10 @@ a small {
   }
   .item ~ .item {
     margin-left: 2%;
+  }
+  .addons .col-sm-3,
+  .addons .col-sm-6 {
+    padding: 20px 15px 1000em 15px;
   }
   .addons .col-sm-3 {
     width: 23%;

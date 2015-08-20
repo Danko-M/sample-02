@@ -1,3 +1,13 @@
+/*
+Author:       Danko Milutinovic
+Desctiption:  styles for http://danko-m.github.io/sample-02/
+Contact:      dankomilutinovic@gmail.com, 
+              https://rs.linkedin.com/pub/danko-milutinovic/a3/675/778, 
+              http://danko-m.github.io/
+Design:       EnzoLiVolti:  http://enzolivolti.com/ , 
+              https://www.behance.net/gallery/12680703/FREE-FooseShoes-eCommerce-PSD
+*/
+
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -55,7 +65,6 @@ a:hover {
   display: block;
   display: none;
   width: auto;
-  /*height: 20px;*/
   padding: 5px 10px;
   color: #fff;
   background-color: #636363;
@@ -120,8 +129,8 @@ a:hover {
 }
 
 .info li + li {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .teaser {
@@ -180,7 +189,6 @@ a:hover {
 .items-header > div {
   width: 150px;
   font-size: 14px;
-  /*line-height: 90px;*/
 }
 
 
@@ -274,10 +282,12 @@ a small {
   border-radius: 0;
   background-color: transparent;
 }
+
 .show-all:hover {
   color: #969289;
   background-color: transparent;
 }
+
 .item {
   position: relative;
   display: block;
@@ -298,7 +308,7 @@ a small {
   padding-left: 105px;
   line-height: 50px;
   font-size: 20px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #ccc;
 }
 
 .item .msg {
@@ -343,10 +353,11 @@ a small {
 
 .addons {
   margin: 50px auto 20px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #ccc;
   padding-top: 30px;
   overflow: hidden;
 }
+
 
 /*.addons .row {
   margin: 0;
@@ -384,34 +395,34 @@ a small {
   overflow: auto;
 }
 
-
-
-
 .widget {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #a4a4a4;
 }
+
 .widget-title {
   margin-bottom: 15px;
 }
+
 .tweet-text {
   font-style: italic;
 }
+
 .twitter-atreply {
   color: #57c5a0;
 }
+
 .twitter-atreply:hover {
   color: #57c5a0;
   text-decoration: underline;
 }
+
 .twited-ago {
   margin-bottom: 15px;
   font-weight: 700;
   font-style: italic;
 }
-
-
 
 .flickr_badge_image {
   float: left;
@@ -427,31 +438,32 @@ a small {
   text-align: left
 }
 
-
-
-
 .contact {
   padding: 30px 0;
 }
+
 .social {
   list-style: none;
   padding-left: 0;
   margin-top: 40px;
-
 }
+
 .social li {
   display: inline-block;
 }
+
 .social a {
   color: #828282;
 }
+
 .social .fa {
   background: #2E2E2E;
 }
-.input-wrapper{
+
+.input-wrapper {
   position: relative;
-  /*display: inline-block;*/
 }
+
 .input-wrapper input {
   width: 80%;
   padding: 0 10px;
@@ -460,23 +472,28 @@ a small {
   background: #2E2E2E;
   line-height: 30px;
 }
+
 .fa-chevron-right {
   position: relative;
   top: 1px;
   background: #828282;
 }
+
 .separator {
   border-bottom: 1px solid #1c1c1c;
 }
+
 .copy {
   padding: 30px 0;
   color: #828282;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
+
 .copy a:hover {
   text-decoration: underline;
   color: #57c5a0;
 }
+
 .footer-links {
   list-style-type: none;
   margin-top: 20px;
@@ -500,25 +517,24 @@ a small {
   .logo {
     width: auto;
   }
-
   .info li + li {
     border: none;
   }
   .info li:first-child {
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
   .navbar,
   .navbar-nav {
     margin: 0;
   }
   .navbar-default {
-    border-left: 1px solid lightgray; 
-    border-right: 1px solid lightgray; 
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
   .navbar-nav>li>a {
     font-weight: 700;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid #ccc;
   }
   .user-area {
     float: right;

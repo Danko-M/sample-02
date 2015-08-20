@@ -1,5 +1,4 @@
 body {
-  background: pink;
   font-family: 'Lato', sans-serif;
 }
 
@@ -83,6 +82,9 @@ a:hover {
 .navbar {
   border: none;
   border-radius: 0;
+  margin-bottom: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .navbar-default {
@@ -184,7 +186,7 @@ a:hover {
 
 /*tabs*/
 
-.nav-tabs-bg {
+.bg-02 {
   background: #2e2e2e;
 }
 
@@ -225,7 +227,7 @@ a small {
   padding-bottom: 10px;
 }
 
-.tab-content-bg {
+.bg-03 {
   background: #242424;
 }
 
@@ -267,8 +269,15 @@ a small {
   top: 50%;
   right: 0;
   margin-top: -17px;
+  font-weight: 700;
+  color: #B5B0A7;
+  border-radius: 0;
+  background-color: transparent;
 }
-
+.show-all:hover {
+  color: #969289;
+  background-color: transparent;
+}
 .item {
   position: relative;
   display: block;
@@ -359,10 +368,10 @@ a small {
 }
 
 .date {
-  float: left;
-  width: 60px;
+  width: 50px;
   margin-right: 10px;
-  padding: 10px;
+  padding: 5px 0;
+  float: left;
   font-weight: 700;
   text-align: center;
   color: #fff;
@@ -377,6 +386,58 @@ a small {
   overflow: auto;
 }
 
+
+
+.widgets {
+  padding-top: 50px;
+}
+.widget {
+  padding-bottom: 30px;
+  color: #a4a4a4;
+}
+.widget-title {
+  margin-bottom: 15px;
+}
+.tweet-text {
+  font-style: italic;
+}
+.twitter-atreply {
+  color: #57c5a0;
+}
+.twitter-atreply:hover {
+  color: #57c5a0;
+  text-decoration: underline;
+}
+.twited-ago {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+.flickr_badge_image {
+  float: left;
+}
+
+.flickr_badge_image img {
+  border: none;
+  padding: 0;
+  margin: 2px;
+}
+
+.flickr_badge_wrapper {
+  text-align: left
+}
+
+
+
+
+
+
+.separator {
+  border-bottom: 1px solid #1c1c1c;
+}
 .footer-links {
   list-style-type: none;
   margin: 0;
@@ -400,6 +461,7 @@ a small {
   .logo {
     width: auto;
   }
+
   .info li + li {
     border: none;
   }
@@ -407,8 +469,13 @@ a small {
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
   }
+  .navbar,
   .navbar-nav {
     margin: 0;
+  }
+  .navbar-default {
+    border-left: 1px solid lightgray; 
+    border-right: 1px solid lightgray; 
   }
   .navbar-nav>li>a {
     font-weight: 700;
@@ -456,6 +523,9 @@ a small {
   .addons .col-sm-6 {
     width: 50%;
   }
+  .widgets {
+    margin: 0 20px;
+  }
   .footer-links {
     position: absolute;
     top: 0;
@@ -472,6 +542,14 @@ a small {
 @media (min-width: 992px) {
   .container {
     width: 940px;
+  }
+  .info li {
+    line-height: 60px;
+  }
+  .navbar-nav>li>a {
+    padding: 15px 20px;
+    line-height: 30px;
+    font-size: 16px;
   }
   .item {
     width: 31.9%;

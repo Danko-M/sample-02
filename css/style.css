@@ -388,7 +388,7 @@ a small {
 
 
 
-.widgets {
+.narrow-row {
   padding-top: 50px;
 }
 .widget {
@@ -431,10 +431,38 @@ a small {
 }
 
 
-
-
-
-
+.social {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.social li {
+  display: inline-block;
+}
+.social a {
+  color: #828282;
+}
+.social .fa {
+  background: #2E2E2E;
+}
+.input-wrapper{
+  position: relative;
+  /*display: inline-block;*/
+}
+.input-wrapper input {
+  width: 80%;
+  padding: 0 10px;
+  border: none;
+  color: #fff;
+  background: #2E2E2E;
+  line-height: 30px;
+}
+.fa-chevron-right {
+  position: relative;
+  top: 1px;
+  background: #828282;
+}
 .separator {
   border-bottom: 1px solid #1c1c1c;
 }
@@ -523,8 +551,11 @@ a small {
   .addons .col-sm-6 {
     width: 50%;
   }
-  .widgets {
+  .narrow-row {
     margin: 0 20px;
+  }
+  .social {
+    margin-top: 0;
   }
   .footer-links {
     position: absolute;
@@ -574,6 +605,12 @@ a small {
   .stock-out {
     padding: 14px 0;
     line-height: 20px;
+  }
+  .input-wrapper input {
+    line-height: 40px;
+  }
+  .social {
+    padding-left: 40px;
   }
 }
 

@@ -701,6 +701,9 @@ a small {
   width: auto;
   font-size: 25px;
 }
+.ie8 .narrow-row {
+  margin: 0 20px;
+}
 .ie8 .input-wrapper input {
   height: 30px;
 }

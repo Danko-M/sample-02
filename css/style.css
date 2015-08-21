@@ -667,7 +667,7 @@ a small {
 }
 
 .ie8 .info {
-  float: right !important;
+  float: right;
 }
 
 .ie8 .user-area {
@@ -675,7 +675,7 @@ a small {
 }
 
 .ie8 .teaser {
-  position: relative !important;
+  position: relative;
   min-height: 460px;
   z-index: 100;
   background: url(../img/teaser-repeat.jpg);
@@ -697,13 +697,16 @@ a small {
 .ie8 .item + .item {
   margin-left: 2.1%;
 }
+
 .ie8 .items-header > div {
   width: auto;
   font-size: 25px;
 }
+
 .ie8 .narrow-row {
   margin: 0 20px;
 }
+
 .ie8 .input-wrapper input {
   height: 30px;
 }
